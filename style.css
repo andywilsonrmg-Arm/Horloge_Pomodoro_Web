@@ -1,0 +1,136 @@
+
+
+:root {
+    --lcd: #fff;
+    --light: #f1f1f1;
+    --dark: #b61c1c;
+    --dark2: #000022;
+}
+
+
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right,
+            var(--dark), var(--dark2));
+    background-attachment: scroll;
+    font-family: 'Audiowide',sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin: 30px 0;
+    color: var(--light);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 20px;
+    color: var(--light);
+}
+
+.affichage {
+    background: var(--light);
+    margin: 50px auto;
+    width: 70%;
+    max-width: 900px;
+    min-width: 500px;
+    display: flex;
+    border-radius: 25px;
+
+}
+
+.bloc {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.bloc p:nth-child(1) {
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 15px;
+    font-family: 'VT323', monospace;
+    color:#831616;
+}
+
+.bloc:nth-child(1) {
+    border-right: 1px solid var(--dark);
+}
+
+.container-btns {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 900px;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.b1,
+.b2,
+.b3 {
+    display: block;
+    padding: 18px;
+    font-size: 25px;
+    font-family: 'Orbitron',monospace;
+    width: 200px;
+    border: 2px solid #921e1e;
+    background: var(--light);
+    border-radius: 25px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover {
+    cursor: pointer;
+    color: var(--light);
+    background: var(--dark);
+    border: 1px solid var(--light);
+    transition: .4s;
+}
+
+.b1:active,
+.b2:active,
+.b3:active {
+    background: #888;
+}
+
+
+.container-btns img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.affichageT,
+.affichageP {
+    font-family: 'Press Start 2P', monospace;
+    width: 250px;
+    text-align: center;
+    background: #692525;
+    color: var(--lcd);
+    padding: 15px;
+    text-shadow: 0px 0px 8px var(--lcd);
+    border-radius: 5px;
+}
+
+
+
